@@ -1,42 +1,49 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurFiles/Wolliesx.feature");
 formatter.feature({
-  "line": 1,
-  "name": "This is to launch application and add items to cart",
+  "line": 4,
+  "name": "This for WolliesX Tech challenge",
   "description": "",
-  "id": "this-is-to-launch-application-and-add-items-to-cart",
-  "keyword": "Feature"
+  "id": "this-for-wolliesx-tech-challenge",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@OrderProduct"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 6,
-  "name": "Launch application",
+  "line": 7,
+  "name": "Launch application and Place Order",
   "description": "",
-  "id": "this-is-to-launch-application-and-add-items-to-cart;launch-application",
+  "id": "this-for-wolliesx-tech-challenge;launch-application-and-place-order",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 5,
+      "name": "@AddCartTc1"
+    }
+  ]
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "User Launch Chrome browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "User opens URL \"http://automationpractice.com/index.php\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "User Click on PrdWomen",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
-  "name": "User Click on List",
-  "keyword": "And "
-});
-formatter.step({
   "line": 11,
-  "name": "User Click on Add to Cart",
+  "name": "User Adds firstProduct to cart",
   "keyword": "Then "
 });
 formatter.step({
@@ -46,53 +53,157 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
+  "name": "User Adds Product2 to cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "User Proceeds to cartsummary",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "Validates Authentication page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 16,
+  "name": "User provides Emailaddress and Password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "User Clicks Sign in and Proceed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "User Selects Shipping and Proceed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "User Selects check Payment options",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "User Confirm order summary",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 21,
+  "name": "User validates Order Confirmation",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
   "name": "Close browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "WolliesX.User_Launch_Chromebrowser()"
+  "location": "WolliesX.user_Launch_Chromebrowser()"
 });
 formatter.result({
-  "duration": 6026766053,
+  "duration": 6343005474,
   "status": "passed"
 });
 formatter.match({
-  "location": "WolliesX.User_opens_URL()"
+  "location": "WolliesX.user_opens_URL()"
 });
 formatter.result({
-  "duration": 4942588897,
+  "duration": 6918436076,
   "status": "passed"
 });
 formatter.match({
-  "location": "WolliesX.User_Click_on_PrdWomen()"
+  "location": "WolliesX.user_Click_on_PrdWomen()"
 });
 formatter.result({
-  "duration": 7614604707,
-  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//*[@id\u003d\"block_top_menu\"]/ul/li[1]/a\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027apples-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:807:eaba:c5d9:6d8c%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: driver.version: RemoteWebDriver\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepDefinitions.WolliesX.User_Click_on_PrdWomen(WolliesX.java:42)\n\tat ✽.And User Click on PrdWomen(featurFiles/Wolliesx.feature:9)\n",
-  "status": "failed"
+  "duration": 6354236229,
+  "status": "passed"
 });
 formatter.match({
-  "location": "WolliesX.User_Click_on_List()"
+  "location": "WolliesX.user_Adds_firstProduct_to_cart()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2191473624,
+  "status": "passed"
 });
 formatter.match({
-  "location": "WolliesX.User_click_on_Add_to_Cart()"
+  "location": "WolliesX.click_on_Continue_Shopping()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1374573887,
+  "status": "passed"
 });
 formatter.match({
-  "location": "WolliesX.Click_on_Continue_Shopping()"
+  "location": "WolliesX.user_Adds_Product2_to_cart()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5859271773,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WolliesX.user_Proceeds_to_cartsummary()"
+});
+formatter.result({
+  "duration": 8336514703,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WolliesX.validates_Authentication_page()"
+});
+formatter.result({
+  "duration": 1268852748,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WolliesX.user_provides_Emailaddress_and_Password()"
+});
+formatter.result({
+  "duration": 3632551128,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WolliesX.user_Clicks_Sign_in_and_Proceed()"
+});
+formatter.result({
+  "duration": 11705419888,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WolliesX.user_Selects_Shipping_and_Proceed()"
+});
+formatter.result({
+  "duration": 10242182569,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WolliesX.user_Selects_check_Payment_options()"
+});
+formatter.result({
+  "duration": 6404641155,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WolliesX.user_Confirm_order_summary()"
+});
+formatter.result({
+  "duration": 7310347364,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WolliesX.user_validates_Order_Confirmation()"
+});
+formatter.result({
+  "duration": 3245074295,
+  "status": "passed"
 });
 formatter.match({
   "location": "WolliesX.Close_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 653976002,
+  "status": "passed"
 });
 });
